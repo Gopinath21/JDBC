@@ -1,0 +1,42 @@
+DDL:common cmds
+Create table;
+drop table;
+alter table;
+DML : Common cmds,
+select, update, instert, & delete.
+javax.sql package is used for Enterprise applcaitions, EJBS;
+EJBS : used to buid & deploys o-o & distributed enterprise appls.
+J2SE 1.4 : have JDBC 3.0 . JDBC 3.0=java.sql, javax.sql;
+jdbc2.1 API ;
+consists of two apis-
+the core api and the jdbc optional package api.
+Core Api = java.sql without javax.sql.
+Optional APi = javax.sql without java.sql;
+JDBC 3.0 = have both 
+packages as core.
+jDBC=used for open connetions , excute the SQL stmts , process the results..
+
+Performance imporemets:-
+1) Connection pooling
+2) Data caching 
+Transtation :
+A set of squence of SQL stmts & performs one LUW.
+LUW= logical unit of work.
+===
+=>Connection mgmtnt :=The JDBC DataSource & ConnectionPoolDataSource interfaces enables applicaiton components to connect to back-end systems.
+==Transaction mgmt:=
+The JDBC XADataSource interface allows applcations to access rescources & databases.
+===Security mgmt:=
+the JDBC API does not contain interfaces that enables secure access . However , the JDBC API can be mapped to the J2EE Connector architecture;'s SPI ; and this will ensure
+that applcaitons have secure access to back -end systems.
+
+Choosing the JDBC driver:
+1) Architecture
+2) Data -access requirements of applicaition.
+Type 4 : driver is most suitable driver for the use in a two-tier applcaitons .
+2-tier arch support drivers are :- 
+type 1 , type 2 , type 3 .
+But we should select either type 2 or type 4 b/c to get the all functionality of the target database.
+type1 not provide the 
+all of the functionality of DB . type 1 not support proprietaty SQL stmts.
+type 3 is not sutable for 2 -tiiers b/c it requrite remoteserver.

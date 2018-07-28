@@ -1,3 +1,6 @@
 
 DDL: CAR , Creation , Adjectment, Removal of(Database or DatabaseObject).
 DML:Retrival & Manipulation of data in Database
+
+	http://tutorials.jenkov.com/java-util-concurrent/executorservice.html
+
